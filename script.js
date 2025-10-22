@@ -2,18 +2,16 @@
 let humanScore = 0;
 let computerScore = 0;
 
-let generatedNum = Math.random();
-
-
 // Use Math.random() method to randomly return the computer choice
 function getComputerChoice() {
-  if (generatedNum >= 0 && generatedNum <= 0.3) {
+  let generatedNum = Math.random();
+  if (generatedNum >= 0 && generatedNum <= 0.30) {
     console.log(generatedNum)
     return "rock";
-  } else if (generatedNum > 0.3 && generatedNum <= 0.7) {
+  } else if (generatedNum > 0.30 && generatedNum <= 0.70) {
     console.log(generatedNum)
     return "paper";
-  } else if (generatedNum > 0.7 && generatedNum < 1) {
+  } else if (generatedNum > 0.70 && generatedNum < 1) {
     console.log(generatedNum)
     return "scissors";
   }
